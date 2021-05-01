@@ -1,0 +1,25 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "satansdeer",
+      "name": "Maksim Ivanov",
+      "avatar_url": "https://avatars.githubusercontent.com/u/450319?v=4",
+      "profile": "http://maksimivanov.com",
+      "contributions": [
+        "maintenance",
+        "code"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "ts-forward-ref",
+  "projectOwner": "satansdeer",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
