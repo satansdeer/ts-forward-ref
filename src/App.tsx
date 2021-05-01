@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
+import { useEffect, useRef } from 'react';
 import './App.css';
+import { Button } from './Button';
+import { ButtonSimplified } from './ButtonSimplified';
 
 function App() {
+  const buttonRef = useRef(null)
+  const buttonSimplifiedRef = useRef(null)
+
+  useEffect(() => {
+    console.log("Button element", buttonRef.current)
+    console.log("ButtonSimplified element", buttonSimplifiedRef.current)
+  }, [])
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Button ref={buttonRef}/>
+      <ButtonSimplified text="Example Button" ref={buttonSimplifiedRef}/>
     </div>
   );
 }
